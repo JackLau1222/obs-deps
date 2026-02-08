@@ -40,6 +40,9 @@ config() {
     -DNO_TESTS=1
     -DNO_EXAMPLES=1
     -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+    -DCMAKE_BUILD_TYPE=Debug
+    -DCMAKE_C_FLAGS="-g -O0"
+    -DCMAKE_CXX_FLAGS="-g -O0"
   )
 
   log_info "Config (%F{3}${target}%f)"
